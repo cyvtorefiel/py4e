@@ -7,10 +7,10 @@ def computepay(hours, rate):
     rate = float(rate)
 
     #Computes for pay rate
-    if (hours>40):
-        pay = (40*rate)+((hours-40)*(rate+(rate/2)))
+    if (hours > 40):
+        pay = (40 * rate) + ((hours - 40) * (rate + (rate/2)))
     else:
-        pay = (hours*rate)
+        pay = (hours * rate)
 
     #Prints the pay rate
     print("Pay rate: ", pay)
@@ -24,7 +24,7 @@ except:
     h = -1
 
 #If input is valid will continue
-if (h > 0):
+if (h >= 0):
     #Asks for user input for rate
     rate = input("Enter work rate: ")
     try:
@@ -32,9 +32,9 @@ if (h > 0):
     except:
         r = -1
 
-    if (r > 0):
+    if (r >= 0):
         #Calls computepay()
-        computepay(h,r)
+        computepay(h, r)
 
     else:
         print("Error, please enter numeric input")

@@ -8,7 +8,7 @@ except:
     h = -1
 
 #If input is valid will continue
-if (h > 0):
+if (h >= 0):
     #Asks for user input for rate
     rate = input("Enter work rate: ")
     try:
@@ -16,16 +16,16 @@ if (h > 0):
     except:
         r = -1
 
-    if (r > 0):
+    if (r >= 0):
         #Converts hours and rate to float
         hours = float(hours)
         rate = float(rate)
 
         #Computes for pay rate
-        if (hours>40):
-            pay = (40*rate)+((hours-40)*(rate*1.5))
+        if (hours > 40):
+            pay = (40 * rate) + ((hours - 40) * (rate * 1.5))
         else:
-            pay = (hours*rate)
+            pay = (hours * rate)
 
         #Prints the pay rate
         print("Pay rate: ", pay)

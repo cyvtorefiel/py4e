@@ -19,7 +19,7 @@ while (True):
         except:
             n = -1
 
-        if (n > 0):
+        if (n >= 0):
             total += n
             count += 1
             average = total/count
