@@ -23,7 +23,7 @@ if (h > 0):
 
         #Computes for pay rate
         if (hours>40):
-            pay = (40*rate)+((hours-40)*15)
+            pay = (40*rate)+((hours-40)*(rate*1.5))
         else:
             pay = (hours*rate)
 
@@ -32,7 +32,7 @@ if (h > 0):
 
     else:
         print("Error, please enter numeric input")
-        
+
 #If input is invalid, will print
 else:
     print("Error, please enter numeric input")
